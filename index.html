@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>EUROBUILD</title>
     <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -35,5 +39,57 @@
         </div>
       </div>
     </header>
+    <section class="hero-slider">
+      <!-- do not edit classes for the swiper elements. the slider will stop working -->
+      <!-- swiper start -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/quarry.png" alt="quarry" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/quarry.png" alt="quarry" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/quarry.png" alt="quarry" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/quarry.png" alt="quarry" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- swiper end -->
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
   </body>
 </html>
