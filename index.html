@@ -39,34 +39,192 @@
         </div>
       </div>
     </header>
-    <section class="hero-slider">
-      <!-- do not edit classes for the swiper elements. the slider will stop working -->
-      <!-- swiper start -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./assets/images/quarry.png" alt="quarry" />
+    <main class="content">
+      <section class="hero-slider">
+        <!-- do not edit classes for the swiper elements. the slider will stop working -->
+        <!-- swiper start -->
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./assets/images/quarry.png" alt="quarry" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/quarry.png" alt="quarry" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/quarry.png" alt="quarry" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./assets/images/quarry.png" alt="quarry" />
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/quarry.png" alt="quarry" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/quarry.png" alt="quarry" />
-          </div>
-          <div class="swiper-slide">
-            <img src="./assets/images/quarry.png" alt="quarry" />
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- swiper end -->
+      </section>
+      <section class="about">
+        <span class="about__heading">ევრობილდი</span>
+        <p class="about__paragraph">
+          ჰაიდელბერგცემენტი გლობალურ ბაზარზე სამშენებლო მასალების წარმოების
+          აღიარებული ლიდერია. კომპანია მსოფლიოს 60 ქვეყანაში 3000 ქარხნითა და
+          60000-ზე მეტი დასაქმებულითაა წარმოდგენილი. კომპანიას მოწინავე პოზიცია
+          უჭირავს ცემენტის და ბეტონის წარმოებაში. იტალიური მწარმოებლის -
+          „იტალცემენტის“ შეერთების შემდეგ კომპანიამ პირველი ადგილი დაიკავა
+          ინერტული მასალების წარმოების მიმართულებით.
+        </p>
+        <p class="about__paragraph">
+          ჰაიდელბერგცემენტი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+          ამარაგებს თითქმის ყველა მსხვილ სამშენებლო პროექტს ცემენტით და ბეტონით,
+          მეტიც, კომპანია წარმოადგენს კლინკერის ერთადერთ მწარმოებელს ქვეყანაში.
+        </p>
+        <p class="about__paragraph">
+          დღეისათვის ჰაიდელბერგცემენტს 200 მილიონ ევროზე მეტი ინვესტიცია აქვს
+          განხორციელებული საქართველოში, რაც, ძირითადად, ცემენტის არსებული
+          ქარხნების მოდერნიზაციაზე, ასევე ბეტონის და ინერტული მასალების საწარმოო
+          ხაზის გაფართოებაზე იყო ორიენტირებული.
+        </p>
+      </section>
+      <section class="services">
+        <span class="services__heading"> ჩვენი სერვისები </span>
+        <div class="services__container">
+          <article class="service">
+            <img
+              src="./assets/images/bridge.png"
+              alt="bridge"
+              class="service__img"
+            />
+            <div class="service__container">
+              <span class="service__heading">კომპანიის სერვისი 1</span>
+              <p class="service__paragraph">
+                ეფექტური და სტაბილური ბიზნეს მოდელი საშუალებას გვაძლევს...
+              </p>
+              <button type="button" class="service__btn">იხილეთ ვრცლად</button>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              src="./assets/images/tower.png"
+              alt="tower"
+              class="service__img"
+            />
+            <div class="service__container">
+              <span class="service__heading">კომპანიის სერვისი 2</span>
+              <p class="service__paragraph">
+                კორპორაციის საქმიანობა მოიცავს სამ ძირითად მიმართულებას...
+              </p>
+              <button type="button" class="service__btn">იხილეთ ვრცლად</button>
+            </div>
+          </article>
+          <article class="service">
+            <img
+              src="./assets/images/oil-rig.png"
+              alt="oil rig"
+              class="service__img"
+            />
+            <div class="service__container">
+              <span class="service__heading">კომპანიის სერვისი 3</span>
+              <p class="service__paragraph">
+                ეფექტური და სტაბილური ბიზნეს მოდელი საშუალებას გვაძლევს...
+              </p>
+              <button type="button" class="service__btn">იხილეთ ვრცლად</button>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="news">
+        <div class="news__wrapper">
+          <span class="news__heading--primary">სიახლეები</span>
+          <div class="swiper news-swiper">
+            <div class="swiper-wrapper news__container">
+              <div class="swiper-slide news__slide">
+                <img
+                  class="news__img"
+                  src="./assets/images/lights.png"
+                  alt="light bulbs"
+                />
+                <span class="news__heading"
+                  >მინდელის დაიმონდში გაყიდვები დაიწყო</span
+                >
+                <p class="news__paragraph">
+                  დაიმონ პროჯექტსის რიგით მესამე პროექტში, მინდელის დაიმონდში
+                  გაყიდვები დაიწყო. კომპლექსის მშენებლობა 2019 წლის თებერვალში
+                  დაიწყო და ამ ეტაპისთვის სამუშაოების 80%-ზე მეტი უკვე
+                  შესრულებულია, მონოლითის და კონსტრუქციის მშენებლობს
+                </p>
+                <span class="news__date">25 მარ. 21</span>
+                <button type="button" class="news__btn">სრულად</button>
+              </div>
+              <div class="swiper-slide news__slide">
+                <img
+                  class="news__img"
+                  src="./assets/images/people.png"
+                  alt="people looking at something"
+                />
+                <span class="news__heading"
+                  >მინდელის დაიმონდში გაყიდვები დაიწყო</span
+                >
+                <p class="news__paragraph">
+                  დაიმონ პროჯექტსის რიგით მესამე პროექტში, მინდელის დაიმონდში
+                  გაყიდვები დაიწყო. კომპლექსის მშენებლობა 2019 წლის თებერვალში
+                  დაიწყო და ამ ეტაპისთვის სამუშაოების 80%-ზე მეტი უკვე
+                  შესრულებულია, მონოლითის და კონსტრუქციის მშენებლობს
+                </p>
+                <span class="news__date">25 მარ. 21</span>
+                <button type="button" class="news__btn">სრულად</button>
+              </div>
+              <div class="swiper-slide news__slide">
+                <img
+                  class="news__img"
+                  src="./assets/images/lights.png"
+                  alt="light bulbs"
+                />
+                <span class="news__heading"
+                  >მინდელის დაიმონდში გაყიდვები დაიწყო</span
+                >
+                <p class="news__paragraph">
+                  დაიმონ პროჯექტსის რიგით მესამე პროექტში, მინდელის დაიმონდში
+                  გაყიდვები დაიწყო. კომპლექსის მშენებლობა 2019 წლის თებერვალში
+                  დაიწყო და ამ ეტაპისთვის სამუშაოების 80%-ზე მეტი უკვე
+                  შესრულებულია, მონოლითის და კონსტრუქციის მშენებლობს
+                </p>
+                <span class="news__date">25 მარ. 21</span>
+                <button type="button" class="news__btn">სრულად</button>
+              </div>
+              <div class="swiper-slide news__slide">
+                <img
+                  class="news__img"
+                  src="./assets/images/people.png"
+                  alt="people looking at something"
+                />
+                <span class="news__heading"
+                  >მინდელის დაიმონდში გაყიდვები დაიწყო</span
+                >
+                <p class="news__paragraph">
+                  დაიმონ პროჯექტსის რიგით მესამე პროექტში, მინდელის დაიმონდში
+                  გაყიდვები დაიწყო. კომპლექსის მშენებლობა 2019 წლის თებერვალში
+                  დაიწყო და ამ ეტაპისთვის სამუშაოების 80%-ზე მეტი უკვე
+                  შესრულებულია, მონოლითის და კონსტრუქციის მშენებლობს
+                </p>
+                <span class="news__date">25 მარ. 21</span>
+                <button type="button" class="news__btn">სრულად</button>
+              </div>
+            </div>
+            <div class="swiper-button-prev news__prev">
+              <img src="./assets/images/arrow-left.svg" alt="left arrow" />
+            </div>
+            <div class="swiper-button-next news__next">
+              <img src="./assets/images/arrow-right.svg" alt="left arrow" />
+            </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <!-- swiper end -->
-    </section>
+      </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module">
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
-      const swiper = new Swiper(".swiper", {
+      const heroSwiper = new Swiper(".hero-swiper", {
         // Optional parameters
         direction: "horizontal",
         loop: true,
@@ -86,6 +244,24 @@
         },
 
         // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      const newsSwiper = new Swiper(".news-swiper", {
+        direction: "horizontal",
+        slidesPerView: 2,
+        spaceBetween: 14,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
         scrollbar: {
           el: ".swiper-scrollbar",
         },
