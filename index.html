@@ -299,6 +299,122 @@
           </article>
         </div>
       </section>
+      <section class="products">
+        <div class="swiper products-swiper">
+          <div class="swiper-wrapper products__container">
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/cement.png"
+                alt="cement"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ცემენტი</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/tile-worker.png"
+                alt="tile worker"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ბეტონი</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/cement-workers.png"
+                alt="cement workers"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ინერტული მასალები</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/cement.png"
+                alt="cement"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ცემენტი</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/cement.png"
+                alt="cement"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ცემენტი</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide products__slide">
+              <img
+                class="products__img"
+                src="./assets/images/tile-worker.png"
+                alt="tile worker"
+              />
+              <div class="products__text-container">
+                <h1 class="products__heading">ბეტონი</h1>
+                <p class="products__price">
+                  ჩვენი ფასი: <span class="products__price--blue">100₾</span>
+                </p>
+                <p class="products__paragraph">
+                  ევრობილდი წამყვანი ბრენდია საქართველოს ცემენტის ბაზარზე. ის
+                  ამარაგებს თითქმის ყველა . . . მსხვილ სამშენებლო პროექტს
+                  ცემენტით და ბეტონით, მეტიც, კომპანია წარმოადგენს კლინკერის
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev products__prev"></div>
+          <div class="swiper-button-next products__next"></div>
+        </div>
+      </section>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -306,25 +422,19 @@
       import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
       const heroSwiper = new Swiper(".hero-swiper", {
-        // Optional parameters
         direction: "horizontal",
         loop: true,
         autoplay: {
           delay: 5000,
           disableOnInteraction: false,
         },
-        // If we need pagination
         pagination: {
           el: ".swiper-pagination",
         },
-
-        // Navigation arrows
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-
-        // And if we need scrollbar
         scrollbar: {
           el: ".swiper-scrollbar",
         },
@@ -334,17 +444,21 @@
         slidesPerView: 2,
         spaceBetween: 14,
         loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-        },
 
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+      const productsSwiper = new Swiper(".products-swiper", {
+        direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
 
-        scrollbar: {
-          el: ".swiper-scrollbar",
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>

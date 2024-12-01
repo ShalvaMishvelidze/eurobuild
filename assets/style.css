@@ -17,6 +17,7 @@ html {
   --clr-gray-1: #00000029;
   --clr-gray-2: #e1e1e1;
   --clr-gray-3: #0000001a;
+  --clr-gray-4: #eee;
   --clr-blue-1: #47a4f5;
   --clr-blue-2: #0074db;
   --clr-blue-3: #0059a8;
@@ -24,6 +25,7 @@ html {
   --clr-blue-5: #2c4861;
   --clr-blue-6: #00080f;
   --clr-blue-7: #47a4f54f;
+  --clr-blue-8: #3484cacc;
 
   --fs-giant: 5rem;
   --fs-bigger: 4rem;
@@ -520,4 +522,103 @@ a {
   border-radius: 0.3rem;
   width: 13.2rem;
   height: 4.1rem;
+}
+
+.products {
+  background-color: var(--clr-gray-2);
+  height: 64.6rem;
+  overflow: hidden;
+  margin-bottom: 23.1rem;
+}
+
+.products-swiper {
+  background-color: var(--clr-gray-2);
+  height: 64.6rem;
+  width: 150rem;
+  overflow: visible !important;
+}
+
+.products__container {
+  background-color: var(--clr-gray-2);
+  height: 64.6rem;
+  align-items: center;
+}
+
+.products__slide {
+  width: 63.8rem !important;
+  height: 34.2rem !important;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.products__img {
+  width: 63.8rem;
+  height: 34.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.products__slide::after {
+  content: "";
+  width: 63.8rem;
+  height: 34.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  background-color: var(--clr-blue-8);
+}
+
+.products__text-container {
+  position: absolute;
+  z-index: 30;
+  width: 49.6rem;
+  height: 19.7rem;
+  background-color: var(--clr-gray-4);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.products__heading {
+  font-size: var(--fs-big);
+  line-height: 3.5rem;
+  color: var(--clr-blue-1);
+  font-weight: var(--fw-regular);
+}
+
+.products__price {
+  font-size: var(--fs-large);
+  line-height: 2.4rem;
+}
+
+.products__price--blue {
+  color: var(--clr-blue-1);
+}
+
+.products__paragraph {
+  width: 38.7rem;
+  height: 4.7rem;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: var(--fs-small);
+  line-height: 2.3rem;
+}
+
+.products__prev {
+  left: calc(50% - 5.8rem) !important;
+  top: 57.3rem !important;
+}
+.products__next {
+  right: calc(50% - 5.8rem) !important;
+  top: 57.3rem !important;
 }
