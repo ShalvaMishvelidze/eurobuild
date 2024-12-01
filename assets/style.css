@@ -27,7 +27,7 @@ html {
 
   --fs-giant: 5rem;
   --fs-bigger: 4rem;
-  --fs-big: 2.4rem;
+  --fs-big: 2.6rem;
   --fs-larger: 2rem;
   --fs-large: 1.8rem;
   --fs-regular: 1.6rem;
@@ -438,4 +438,86 @@ a {
 .contact__socials__icon {
   width: 2.4rem;
   height: 2.4rem;
+}
+
+.vacancies {
+  width: 123.4rem;
+  margin: 12.4rem auto 12.2rem;
+}
+
+.vacancies__header {
+  margin-bottom: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.vacancies__heading {
+  font-size: var(--fs-bigger);
+  line-height: 6.4rem;
+  font-weight: 500;
+  border-bottom: 3px solid var(--clr-blue-3);
+  width: 29.8rem;
+  padding-bottom: 0.9rem;
+}
+
+.vacancies__link {
+  font-size: var(--fs-large);
+  line-height: 2.4rem;
+  color: var(--clr-blue-1);
+}
+
+.vacancies__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2.7rem;
+}
+
+.vacancy {
+  width: 100%;
+  height: 13.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-blue-7);
+  border-radius: 0.3rem;
+}
+
+.vacancy__heading {
+  font-size: var(--fs-big);
+  line-height: 3.5rem;
+  font-weight: var(--fw-semi-bold);
+  margin-right: 8.2rem;
+}
+
+.vacancy__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin-right: 3rem;
+}
+
+.vacancy__paragraph {
+  font-size: var(--fs-large);
+  line-height: 2.88rem;
+}
+
+.vacancy__date {
+  font-size: var(--fs-large);
+  line-height: 2.4rem;
+  color: var(--clr-blue-1);
+}
+
+.vacancy__btn {
+  font-size: var(--fs-small);
+  line-height: 1.9rem;
+  color: var(--clr-white);
+  background-color: var(--clr-blue-1);
+  border-radius: 0.3rem;
+  width: 13.2rem;
+  height: 4.1rem;
 }
